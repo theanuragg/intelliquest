@@ -1,0 +1,388 @@
+<!-- Frontend can serve this as documentation index -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest - Documentation Index</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            border-left: 4px solid #667eea;
+            padding-left: 20px;
+        }
+        
+        .section h2 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .doc-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .doc-item {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 4px;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s;
+        }
+        
+        .doc-item:hover {
+            background: #f0f0f0;
+            transform: translateX(5px);
+        }
+        
+        .doc-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .doc-desc {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .doc-file {
+            color: #999;
+            font-size: 12px;
+            font-family: monospace;
+            margin-top: 8px;
+        }
+        
+        .quick-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+        }
+        
+        .quick-link {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            transition: opacity 0.3s;
+        }
+        
+        .quick-link:hover {
+            opacity: 0.9;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #d63384;
+        }
+        
+        .info-box {
+            background: #e3f2fd;
+            border: 1px solid #90caf9;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 Quest - AI Document Automation Engine</h1>
+        <p class="subtitle">Complete documentation index</p>
+        
+        <div class="info-box">
+            <strong>Getting Started?</strong> Start with <code>QUICK_START.md</code> →
+        </div>
+        
+        <div class="quick-links">
+            <a href="../README.md" class="quick-link">📖 Full README</a>
+            <a href="../QUICK_START.md" class="quick-link">⚡ Quick Start</a>
+            <a href="../INSTALLATION.md" class="quick-link">📦 Installation</a>
+            <a href="../DEVELOPMENT.md" class="quick-link">🔧 Development</a>
+        </div>
+        
+        <!-- Getting Started -->
+        <div class="section">
+            <h2>🚀 Getting Started</h2>
+            <ul class="doc-list">
+                <li class="doc-item">
+                    <div class="doc-title">Quick Start Guide</div>
+                    <div class="doc-desc">Fast 5-minute setup to run your first automation task</div>
+                    <div class="doc-file">→ QUICK_START.md</div>
+                </li>
+                <li class="doc-item">
+                    <div class="doc-title">Complete Installation</div>
+                    <div class="doc-desc">Detailed step-by-step installation with prerequisites for all platforms</div>
+                    <div class="doc-file">→ INSTALLATION.md</div>
+                </li>
+                <li class="doc-item">
+                    <div class="doc-title">Build Summary</div>
+                    <div class="doc-desc">Overview of what's been built and key features</div>
+                    <div class="doc-file">→ BUILD_SUMMARY.md</div>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Core Documentation -->
+        <div class="section">
+            <h2>📚 Core Documentation</h2>
+            <ul class="doc-list">
+                <li class="doc-item">
+                    <div class="doc-title">README (Full)</div>
+                    <div class="doc-desc">Comprehensive documentation covering architecture, API, troubleshooting, and more</div>
+                    <div class="doc-file">→ README.md</div>
+                </li>
+                <li class="doc-item">
+                    <div class="doc-title">Development Guide</div>
+                    <div class="doc-desc">Customization points, adding features, testing, monitoring, and security hardening</div>
+                    <div class="doc-file">→ DEVELOPMENT.md</div>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Source Code -->
+        <div class="section">
+            <h2>💻 Source Code</h2>
+            <ul class="doc-list">
+                <li class="doc-item">
+                    <div class="doc-title">Browser Automation Layer</div>
+                    <div class="doc-desc">Playwright-based browser control with click, fill, download, screenshot actions</div>
+                    <div class="doc-file">→ src/browser/controller.py</div>
+                </li>
+                <li class="doc-item">
+                    <div class="doc-title">Fara-7B Reasoning Engine</div>
+                    <div class="doc-desc">Ollama integration with smart action generation, self-correction, and decision-making</div>
+                    <div class="doc-file">→ src/reasoning/engine.py</div>
+                </li>
+                <li class="doc-item">
+                    <div class="doc-title">OCR & Document Pipeline</div>
+                    <div class="doc-desc">Tesseract integration with caching, text cleaning, and document processing</div>
+                    <div class="doc-file">→ src/ocr/processor.py, src/ocr/pipeline.py</div>
+                </li>
+                <li class="doc-item">
+                    <div class="doc-title">Agentic Orchestrator</div>
+                    <div class="doc-desc">Main reason→act→observe→update loop with state management and self-healing</div>
+                    <div class="doc-file">→ src/agent/orchestrator.py</div>
+                </li>
+                <li class="doc-item">
+                    <div class="doc-title">FastAPI Server</div>
+                    <div class="doc-desc">REST API for task management, status tracking, and file handling</div>
+                    <div class="doc-file">→ src/api/server.py</div>
+                </li>
+                <li class="doc-item">
+                    <div class="doc-title">Logging System</div>
+                    <div class="doc-desc">JSON audit trails, action logging, and comprehensive event tracking</div>
+                    <div class="doc-file">→ src/utils/logger.py</div>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Examples -->
+        <div class="section">
+            <h2>🎓 Examples</h2>
+            <ul class="doc-list">
+                <li class="doc-item">
+                    <div class="doc-title">Basic Example</div>
+                    <div class="doc-desc">Simple example: navigate to website and take screenshot</div>
+                    <div class="doc-file">→ examples/example_basic.py</div>
+                </li>
+                <li class="doc-item">
+                    <div class="doc-title">Invoice Extraction Example</div>
+                    <div class="doc-desc">Complete workflow: login, download PDF, extract structured data</div>
+                    <div class="doc-file">→ examples/example_invoice.py</div>
+                </li>
+                <li class="doc-item">
+                    <div class="doc-title">API Client Example</div>
+                    <div class="doc-desc">How to interact with Quest API from Python code</div>
+                    <div class="doc-file">→ examples/api_client.py</div>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Configuration -->
+        <div class="section">
+            <h2>⚙️ Configuration</h2>
+            <ul class="doc-list">
+                <li class="doc-item">
+                    <div class="doc-title">Environment Variables</div>
+                    <div class="doc-desc">Ollama URL, website credentials, paths, inference parameters, and API settings</div>
+                    <div class="doc-file">→ .env.example (copy to .env)</div>
+                </li>
+                <li class="doc-item">
+                    <div class="doc-title">Config System</div>
+                    <div class="doc-desc">Centralized configuration management with sensible defaults</div>
+                    <div class="doc-file">→ src/config.py</div>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Scripts -->
+        <div class="section">
+            <h2>🔧 Scripts</h2>
+            <ul class="doc-list">
+                <li class="doc-item">
+                    <div class="doc-title">Setup Script</div>
+                    <div class="doc-desc">Automated setup: venv, dependencies, Playwright browsers, .env creation</div>
+                    <div class="doc-file">→ setup.sh</div>
+                </li>
+                <li class="doc-item">
+                    <div class="doc-title">Start Script</div>
+                    <div class="doc-desc">Pre-flight checks and server startup with health verification</div>
+                    <div class="doc-file">→ start.sh</div>
+                </li>
+                <li class="doc-item">
+                    <div class="doc-title">Main Entry Point</div>
+                    <div class="doc-desc">FastAPI server launcher</div>
+                    <div class="doc-file">→ main.py</div>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Frontend -->
+        <div class="section">
+            <h2>🎨 Frontend</h2>
+            <ul class="doc-list">
+                <li class="doc-item">
+                    <div class="doc-title">Web Dashboard</div>
+                    <div class="doc-desc">Modern, responsive UI for task management, monitoring, and result viewing</div>
+                    <div class="doc-file">→ frontend/index.html</div>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Quick Reference -->
+        <div class="section">
+            <h2>📋 Quick Reference</h2>
+            
+            <h3>Start Commands</h3>
+            <code style="display: block; padding: 10px; margin: 10px 0; background: #f4f4f4;">
+ollama serve                          # Terminal 1: Start Ollama<br>
+bash start.sh                         # Terminal 2: Start Quest<br>
+http://localhost:8000/frontend/      # Terminal 3: Open dashboard
+            </code>
+            
+            <h3>API Endpoints</h3>
+            <code style="display: block; padding: 10px; margin: 10px 0; background: #f4f4f4;">
+POST   /tasks                         # Create new task<br>
+GET    /tasks                         # List all tasks<br>
+GET    /tasks/{task_id}              # Get task status<br>
+GET    /tasks/{task_id}/result       # Get results<br>
+GET    /tasks/{task_id}/audit        # Get audit log<br>
+GET    /health                        # Health check
+            </code>
+            
+            <h3>Project Structure</h3>
+            <code style="display: block; padding: 10px; margin: 10px 0; background: #f4f4f4;">
+quest/<br>
+├── src/                              # Main source code<br>
+│   ├── browser/                      # Browser automation<br>
+│   ├── reasoning/                    # Fara-7B reasoning<br>
+│   ├── ocr/                          # OCR & documents<br>
+│   ├── agent/                        # Main orchestrator<br>
+│   ├── api/                          # FastAPI server<br>
+│   └── utils/                        # Logging & utilities<br>
+├── frontend/                         # Web dashboard<br>
+├── examples/                         # Example scripts<br>
+├── logs/                             # Generated logs<br>
+├── downloads/                        # Downloaded files<br>
+└── cache/                            # OCR cache
+            </code>
+        </div>
+        
+        <!-- Key Features -->
+        <div class="section">
+            <h2>✨ Key Features</h2>
+            <ul class="doc-list">
+                <li class="doc-item">
+                    <div class="doc-title">Autonomous Browser Automation</div>
+                    <div class="doc-desc">Playwright + Fara-7B reasoning for intelligent UI navigation</div>
+                </li>
+                <li class="doc-item">
+                    <div class="doc-title">Document Processing</div>
+                    <div class="doc-desc">OCR, text cleaning, classification, and structured extraction</div>
+                </li>
+                <li class="doc-item">
+                    <div class="doc-title">Self-Correcting</div>
+                    <div class="doc-desc">When actions fail, Fara-7B proposes corrections automatically</div>
+                </li>
+                <li class="doc-item">
+                    <div class="doc-title">100% Local</div>
+                    <div class="doc-desc">No cloud services, no external APIs - everything runs locally</div>
+                </li>
+                <li class="doc-item">
+                    <div class="doc-title">Comprehensive Logging</div>
+                    <div class="doc-desc">Deep audit trails in JSON for compliance and debugging</div>
+                </li>
+                <li class="doc-item">
+                    <div class="doc-title">REST API + Web UI</div>
+                    <div class="doc-desc">FastAPI server with modern dashboard for monitoring</div>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Troubleshooting -->
+        <div class="section">
+            <h2>🆘 Troubleshooting</h2>
+            <p>For common issues and solutions, see:</p>
+            <ul style="margin-left: 20px;">
+                <li><strong>Installation problems:</strong> INSTALLATION.md → Troubleshooting section</li>
+                <li><strong>Runtime errors:</strong> README.md → Troubleshooting section</li>
+                <li><strong>Performance issues:</strong> DEVELOPMENT.md → Performance Optimization</li>
+                <li><strong>Debugging:</strong> DEVELOPMENT.md → Debugging Tips</li>
+            </ul>
+        </div>
+        
+        <!-- Footer -->
+        <div style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #ddd; text-align: center; color: #666;">
+            <p><strong>Quest</strong> - AI-Driven Document Automation Engine</p>
+            <p>Built with Fara-7B, Ollama, Playwright, and Tesseract</p>
+            <p style="margin-top: 20px; font-size: 14px;">
+                📖 Start with: <code>QUICK_START.md</code> |
+                📦 Install: <code>INSTALLATION.md</code> |
+                🔧 Develop: <code>DEVELOPMENT.md</code>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
