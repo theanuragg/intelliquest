@@ -683,10 +683,11 @@ ls -la ./downloads/
 
 ## 📚 Documentation
 
-- **Architecture**: See `docs/architecture.md`
-- **API Spec**: See `docs/api.md`
-- **Examples**: See `examples/`
-- **Development**: See `DEVELOPMENT.md`
+- **📖 Getting Started**: See [START_HERE.md](START_HERE.md) - 5-minute quick start
+- **⚡ Quick Reference**: See [QUICK_START.md](QUICK_START.md) - Commands and troubleshooting  
+- **🔧 Installation Guide**: See [INSTALLATION.md](INSTALLATION.md) - Detailed setup instructions
+- **🔬 Technical Documentation**: See [TECHNICAL_README.md](TECHNICAL_README.md) - In-depth architecture, components, and development guide
+- **💡 Examples**: See `examples/` - Code examples for common use cases
 
 ---
 
